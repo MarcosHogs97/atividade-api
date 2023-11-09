@@ -1,0 +1,52 @@
+.mundi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 75px;
+}
+.comp{
+    flex: 1 1 450px;
+    width: 600px;
+    min-width: 300px;
+    border-radius: 17px;
+    padding: 15px;
+    margin: 10px;
+   
+}
+
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+.search input[type="number"] {
+    width: 20.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search button[type="submit"] {
+    background-color: #4e99e9;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    background-color: blue;
+}
