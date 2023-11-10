@@ -20,10 +20,10 @@ export default function CompMundiais(props: CompMundiaisProps) {
             const json = await resp.json();
             const allTimes: Time[] = json.Times || [];
 
-            // Filtra os times a partir do ano informado
+            
             const filteredTimes = allTimes.filter((time) => time.championYear <= props.year);
 
-            // Ordena os times por ano de forma decrescente e pega os 5 últimos
+            
             const lastFiveTimes = filteredTimes.sort((a, b) => b.championYear - a.championYear).slice(0, 5);
             console.log(lastFiveTimes);
             setTimes(lastFiveTimes);
