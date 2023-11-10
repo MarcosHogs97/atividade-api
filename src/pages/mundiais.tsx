@@ -3,7 +3,7 @@ import CompMundiais from "./components/compMundiais";
 import style from "../styles/mundiais.module.css";
 
 export default function Mundiais() {
-    const [ano, setAno] = useState<number | null>(null); // Inicializamos o estado com null
+    const [ano, setAno] = useState<number | null>(null); 
 
     const anoRef = useRef<HTMLInputElement | null>(null);
 
@@ -12,7 +12,7 @@ export default function Mundiais() {
         if (!anoRef.current?.value) return;
 
         const novoAno = parseInt(anoRef.current.value, 10);
-        setAno(novoAno); // Atualizamos o estado com o novo ano
+        setAno(novoAno);
     }
 
     return (
